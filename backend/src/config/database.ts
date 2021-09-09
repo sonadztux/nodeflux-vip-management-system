@@ -5,7 +5,7 @@ export const db = new Sequelize(
   process.env.POSTGRES_USERNAME || 'postgres',
   process.env.POSTGRES_PASSWORD || '',
   {
-    host: process.env.POSTGRES_HOST || 'postgres',
+    host: process.env.POSTGRES_HOST || 'localhost',
     dialect: 'postgres',
     pool: {
       max: 10,
