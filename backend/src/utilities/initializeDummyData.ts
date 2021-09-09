@@ -11,18 +11,18 @@ export const initializeDummyData = async () => {
       attributes: ['red jacket indonesian team', 'blue jeans'],
     })
     await VIP.create({
-      name: 'Gregorius Jimmy',
-      country_of_origin: 'Hongkong',
+      name: 'sonadztux',
+      country_of_origin: 'Zimbabwe',
       eta: new Date(Date.now() - 1000 * 60 * 30), // minus 30 minutes
-
-      attributes: ['red jacket hongkong team', 'red jeans'],
+      photo: 'https://pbs.twimg.com/profile_images/1295117706673270784/iA48jbY9_400x400.jpg',
+      attributes: ['blackpink jacket zimbabwe team', 'blackpink jeans'],
     })
     await VIP.create({
-      name: 'Uzumaki Jimmy',
-      country_of_origin: 'Japan',
+      name: 'Alexander Deden',
+      country_of_origin: 'Javanese-Netherlands',
       eta: new Date(Date.now() - 1000 * 60 * 60), // minus 60 minutes
 
-      attributes: ['bento', 'red nipon headband'],
+      attributes: ['black jacket amsterdam team', 'red dutch headband'],
     })
     console.log('Initialize dummy data succeeded')
   } catch (err) {
