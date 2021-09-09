@@ -1,16 +1,11 @@
 import { Sequelize } from 'sequelize'
-import {
-  DATABASE_NAME,
-  DATABASE_PASSWORD,
-  DATABASE_USERNAME,
-} from './constants'
 
 export const db = new Sequelize(
-  DATABASE_NAME,
-  DATABASE_USERNAME,
-  DATABASE_PASSWORD,
+  process.env.POSTGRES_DATABASE || 'vip_management_system',
+  process.env.POSTGRES_USERNAME || 'postgres',
+  process.env.POSTGRES_PASSWORD || '',
   {
-    host: 'localhost',
+    host: process.env.POSTGRES_HOST || 'postgres',
     dialect: 'postgres',
     pool: {
       max: 10,
